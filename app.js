@@ -1,14 +1,12 @@
 const express = require('express')
 const router = require('./controllers/index')
 const routerApi = require('./controllers/routerApi')
-const cors = require('cors')
 const app = express()
 const port = 3000
 
 // Para evitar problemas de CORS (Cross-Origin Resource Sharing)
 // Añado un middleWare que permite consultas desde orígines de terceros
 // ...
-app.use(cors())
 
 // Motor de vistas
 app.set('view engine', 'pug');
